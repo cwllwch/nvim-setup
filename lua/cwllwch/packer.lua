@@ -7,6 +7,10 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
+  use 'prabirshrestha/vim-lsp'
+  use 'mfussenegger/nvim-dap'
+
+
   use(
   	{ "catppuccin/nvim", 
   		as = "catppuccin",
