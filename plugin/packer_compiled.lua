@@ -80,6 +80,11 @@ _G.packer_plugins = {
     path = "/Users/bernardo.corais/.local/share/nvim/site/pack/packer/start/catppuccin",
     url = "https://github.com/catppuccin/nvim"
   },
+  harpoon = {
+    loaded = true,
+    path = "/Users/bernardo.corais/.local/share/nvim/site/pack/packer/start/harpoon",
+    url = "https://github.com/ThePrimeagen/harpoon"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/Users/bernardo.corais/.local/share/nvim/site/pack/packer/start/lualine.nvim",
