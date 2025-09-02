@@ -10,8 +10,8 @@ require('lualine').setup()
 
 require('lualine').get_config()
 
-vim.lsp.config('elixirls', {
-		cmd = { '/Users/bernardo.corais/elixir-ls/release/language_server.sh' }, })
-vim.lsp.enable('elixirls')
+require('mason').setup()
+
+require("mason-lspconfig").setup()
 
 print("hello, cwllwch")
