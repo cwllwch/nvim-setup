@@ -7,8 +7,12 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
   use 'ThePrimeagen/harpoon'
-  use 'prabirshrestha/vim-lsp'
-  use 'mfussenegger/nvim-dap'
+  use 'nvim-tree/nvim-web-devicons' 
+  use 'neovim/nvim-lspconfig'
+  use 'nvim-treesitter/completion-treesitter' -- Only if you are using TS
+  use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
+  use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
+  use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
 
 
   use(
@@ -19,23 +23,21 @@ return require('packer').startup(function(use)
 		end
 	})
 
-    use {
-  'nvim-telescope/telescope.nvim', tag = '0.1.8',
--- or                            , branch = '0.1.x',
-  requires = { {'nvim-lua/plenary.nvim'} }
-}
+    use { 'nvim-telescope/telescope.nvim', tag = '0.1.8',
+	   -- or                         , branch = '0.1.x',
+	   requires = { {'nvim-lua/plenary.nvim'} }
+	}
 
   use {
 	  "jiaoshijie/undotree",
 	  requires = { "nvim-lua/plenary.nvim", },
-	
-  }
+	  }
 
   use('nvim-treesitter/nvim-treesitter', {run = 'TSUpdate'}) 
   
     
-use {
-  'nvim-lualine/lualine.nvim',
-  requires = { 'nvim-tree/nvim-web-devicons', opt = true }
-}
+  use {
+  	'nvim-lualine/lualine.nvim',
+  	requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+	}
 end)
