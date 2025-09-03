@@ -15,6 +15,12 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
   use 'L3MON4D3/LuaSnip'
   use 'mason-org/mason-lspconfig.nvim'
+  use({ 'folke/trouble.nvim', 
+	  requires = 'nvim-tree/nvim-web-devicons',
+	  config = function()
+		  require("trouble").setup {}
+	  end
+  })
 
   use({ "catppuccin/nvim", 
   		as = "catppuccin",
