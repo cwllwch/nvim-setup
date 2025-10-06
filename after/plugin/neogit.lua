@@ -1,12 +1,9 @@
 local neogit = require("neogit").setup({
+
+	kind = "floating",
 	
 	integrations = {
 		diffview = true,
 	}
 
 })
-
-local neogit = require("neogit") 
-	
-neogit.open( {kind = "floating"} )
-
