@@ -95,6 +95,11 @@ _G.packer_plugins = {
     path = "/Users/bernardo.corais/.local/share/nvim/site/pack/packer/start/completion-treesitter",
     url = "https://github.com/nvim-treesitter/completion-treesitter"
   },
+  ["diffview.nvim"] = {
+    loaded = true,
+    path = "/Users/bernardo.corais/.local/share/nvim/site/pack/packer/start/diffview.nvim",
+    url = "https://github.com/sindrets/diffview.nvim"
+  },
   harpoon = {
     loaded = true,
     path = "/Users/bernardo.corais/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -114,6 +119,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/bernardo.corais/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/mason-org/mason.nvim"
+  },
+  neogit = {
+    loaded = true,
+    path = "/Users/bernardo.corais/.local/share/nvim/site/pack/packer/start/neogit",
+    url = "https://github.com/NeogitOrg/neogit"
   },
   ["nvim-cmp"] = {
     loaded = true,
