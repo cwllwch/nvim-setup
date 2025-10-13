@@ -1,8 +1,7 @@
 require("cwllwch.remap")
 
-vim.o.termguicolors=true
 require("catppuccin").setup()
-vim.cmd.colorscheme "catppuccin-mocha"
+	vim.cmd.colorscheme "catppuccin-mocha"
 
 require('undotree').setup()
 
