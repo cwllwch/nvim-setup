@@ -20,3 +20,7 @@ vim.keymap.set("n", "<leader>cj", ":wincmd j <CR>") -- move cursor to the window
 vim.keymap.set("n", "<leader>ck", ":wincmd k <CR>") -- move cursor to the window above
 vim.keymap.set("n", "<leader>cl", ":wincmd l <CR>") -- move cursor to the window to the left
 vim.keymap.set("n", "<leader>cx", ":close <CR>") -- close current window
+
+-- Terminal 
+vim.keymap.set("n", "<leader>sh", ":terminal <CR> :startinsert <CR>")
+vim.keymap.set("t", "<C-c>", [[<C-\><C-n>]])
