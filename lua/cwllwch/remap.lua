@@ -6,6 +6,9 @@ vim.keymap.set("n", "<leader>gg", vim.cmd.Neogit)
 vim.keymap.set("n", "<leader>ss", vim.cmd.w)
 vim.keymap.set("n", "<leader>ap", vim.cmd.so)
 
+-- marks
+vim.keymap.set("n", "<C-d>m", ":delm! <CR>")
+
 -- Tab controls
 vim.keymap.set("n", "<leader>tn", function () vim.cmd.tabnew() vim.cmd.Ex() end)
 vim.keymap.set("n", "<leader>tc", vim.cmd.tabclose)
