@@ -2,7 +2,6 @@ require("cwllwch.remap")
 
 require("catppuccin").setup()
 	vim.cmd.colorscheme "catppuccin-mocha"
-	vim.g.terminal_color_0 = "black"
 
 require('undotree').setup()
 
