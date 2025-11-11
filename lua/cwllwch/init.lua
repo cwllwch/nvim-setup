@@ -1,7 +1,13 @@
 require("cwllwch.remap")
 
+require("cwllwch.set")
+
 require("catppuccin").setup()
 	vim.cmd.colorscheme "catppuccin-mocha"
+
+require('reactive').setup {
+		load = {'catppuccin-frappe-cursorline', 'catppuccin-mocha-cursor'}
+}
 
 require('undotree').setup()
 

@@ -31,3 +31,6 @@ vim.keymap.set("n", "<leader>hi", ":resize +10 <CR>")
 -- Terminal 
 vim.keymap.set("n", "<leader>sh", ":terminal <CR> :startinsert <CR>")
 vim.keymap.set("t", "<C-c>", [[<C-\><C-n>]])
+-- movement 
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv") 
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
