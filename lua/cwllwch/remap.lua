@@ -41,3 +41,5 @@ vim.keymap.set("n", "<leader>l", "<cmd>AerialToggle!<CR>")
 vim.keymap.set("n", "{", "<cmd>AerialPrev<CR>", { buffer = bufnr })
 vim.keymap.set("n", "}", "<cmd>AerialNext<CR>", { buffer = bufnr })
 
+-- yank commands
+vim.keymap.set("n", "x", "\"_")
