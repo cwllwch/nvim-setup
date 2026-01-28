@@ -35,6 +35,8 @@ vim.keymap.set("t", "<C-c>", [[<C-\><C-n>]])
 -- movement 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv") 
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("i", "<C-4>", "<Esc>$a<Right>")
+vim.keymap.set("i", "<C-->", "<Esc>_a<Left>")
 
 -- aerial    
 vim.keymap.set("n", "<leader>l", "<cmd>AerialToggle!<CR>")

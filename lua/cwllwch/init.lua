@@ -2,8 +2,11 @@ require("cwllwch.remap")
 
 require("cwllwch.set")
 
+require("cwllwch.lsp")
+
 require("catppuccin").setup()
-	vim.cmd.colorscheme "catppuccin-mocha"
+
+vim.cmd.colorscheme "catppuccin-mocha"
 
 require('reactive').setup {
 		load = {'catppuccin-frappe-cursorline', 'catppuccin-mocha-cursor'}
