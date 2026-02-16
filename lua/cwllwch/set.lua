@@ -14,7 +14,7 @@ vim.opt.incsearch = true
 vim.opt.guicursor="a:blinkwait100-blinkoff100-blinkon100"
 vim.opt.termguicolors = true
 vim.o.cursorline = true
-vim.opt.scrolloff = 8
+vim.opt.scrolloff = 12
 vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 

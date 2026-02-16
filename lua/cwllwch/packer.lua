@@ -15,21 +15,26 @@ return require('packer').startup(function(use)
 		use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
 		use 'L3MON4D3/LuaSnip'
 		use 'mason-org/mason-lspconfig.nvim'
-		use({ 'folke/trouble.nvim', 
+		use 'rasulomaroff/reactive.nvim'
+		use 'nvim-mini/mini.animate'
+		use 'nvim-mini/mini.ai'
+		use 'nvim-mini/mini.surround'
+		use 'nvim-mini/mini.operators'
+		use 'airblade/vim-gitgutter'
+
+		use { 'folke/trouble.nvim', 
 			requires = 'nvim-tree/nvim-web-devicons',
 			config = function()
 				require("trouble").setup {}
 			end
-		})
+		}
 
-		use({ "catppuccin/nvim", 
+		use { "catppuccin/nvim", 
 				as = "catppuccin",
 				config = function()
 					vim.cmd('colorscheme catppuccin-mocha')
 				end
-			})
-		
-		use { 'rasulomaroff/reactive.nvim' }
+			}
 		
 		use { 'nvim-telescope/telescope.nvim', tag = '0.1.8',
 			 -- or                         , branch = '0.1.x',
@@ -43,12 +48,10 @@ return require('packer').startup(function(use)
 
 		use('nvim-treesitter/nvim-treesitter', {run = 'TSUpdate'}) 
 		
-			
 		use {
 			'nvim-lualine/lualine.nvim',
 			requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 			}
-
 
 		use {
 				"stevearc/aerial.nvim",
@@ -64,12 +67,12 @@ return require('packer').startup(function(use)
 			}
 		}
 
-		use({
+		use {
 			"nvim-neo-tree/neo-tree.nvim",
 				branch = "v3.x",
 				requires = {
 					"nvim-lua/plenary.nvim",
 					"MunifTanjim/nui.nvim",
 				}
-			})
-end)
+			}
+	end)

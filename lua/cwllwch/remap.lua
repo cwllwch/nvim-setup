@@ -43,5 +43,12 @@ vim.keymap.set("n", "<leader>l", "<cmd>AerialToggle!<CR>")
 vim.keymap.set("n", "{", "<cmd>AerialPrev<CR>", { buffer = bufnr })
 vim.keymap.set("n", "}", "<cmd>AerialNext<CR>", { buffer = bufnr })
 
--- yank commands
+-- gitgutter
+vim.keymap.set("n", "<leader>mm", "<cmd>GitGutterFold<CR>")
+
+-- null register - for when you want to send something to beyond the grave
 vim.keymap.set("n", "x", "\"_")
+
+-- consulting (o for oracle)
+vim.keymap.set("n", "<leader>or", "<cmd>register<CR>") 
+vim.keymap.set("n", "<leader>om", "<cmd>marks<CR>")
