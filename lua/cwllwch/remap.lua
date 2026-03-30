@@ -52,3 +52,7 @@ vim.keymap.set("n", "x", "\"_")
 -- consulting (o for oracle)
 vim.keymap.set("n", "<leader>or", "<cmd>register<CR>") 
 vim.keymap.set("n", "<leader>om", "<cmd>marks<CR>")
+
+-- LSP
+vim.keymap.set("n", "<leader>gd", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true})
+vim.keymap.set("n", "<leader>gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", { noremap = true, silent = true})
