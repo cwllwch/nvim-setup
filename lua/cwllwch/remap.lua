@@ -56,3 +56,8 @@ vim.keymap.set("n", "<leader>om", "<cmd>marks<CR>")
 -- LSP
 vim.keymap.set("n", "<leader>gd", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true})
 vim.keymap.set("n", "<leader>gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", { noremap = true, silent = true})
+
+-- luasnip
+vim.keymap.set("i", "<C-s>", function() require("luasnip").expand() end) 
+vim.keymap.set("i", "<C-j>", function() require("luasnip").jump(1) end) 
+vim.keymap.set("i", "<C-k>", function() require("luasnip").jump(-1) end) 

@@ -13,7 +13,8 @@ return require('packer').startup(function(use)
 		use 'nvim-treesitter/completion-treesitter' -- Only if you are using TS
 		use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
 		use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
-		use 'L3MON4D3/LuaSnip'
+		use {'L3MON4D3/LuaSnip', dependencies = {"rafamadriz/friendly-snippets"}}
+		use "rafamadriz/friendly-snippets"
 		use 'mason-org/mason-lspconfig.nvim'
 		use 'rasulomaroff/reactive.nvim'
 		use 'nvim-mini/mini.animate'

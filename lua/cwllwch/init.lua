@@ -12,6 +12,12 @@ require('reactive').setup {
 		load = {'catppuccin-frappe-cursorline', 'catppuccin-mocha-cursor'}
 }
 
+require("luasnip.loaders.from_vscode").lazy_load()
+
+require("luasnip").filetype_extend("heex", {"html"})
+
+require("cwllwch.snippets")
+
 require('undotree').setup()
 
 require('lualine').setup()
