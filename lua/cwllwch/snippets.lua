@@ -40,4 +40,12 @@ ls.add_snippets("heex", {
     s("hxa", {
 			t('hx-target="'), i(1), t('"')
     }),
+}),
+
+ls.add_snippets("ex", {
+    s("~H", {
+			t('~H"""'), i(1), 
+			t(""), i(1)
+			t('"""'), i(1)
+    }),
 })
