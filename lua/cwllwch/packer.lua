@@ -29,6 +29,11 @@ return require('packer').startup(function(use)
 				require("trouble").setup {}
 			end
 		}
+		use {'folke/flash.nvim',
+			config = function()
+				require("flash").setup {}
+			end
+		}
 
 		use { "catppuccin/nvim", 
 				as = "catppuccin",
