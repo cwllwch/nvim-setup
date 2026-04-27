@@ -5,8 +5,8 @@ vim.opt.relativenumber = true
 vim.opt.nu = true
 vim.o.statuscolumn = "%s %l %r"
 
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
