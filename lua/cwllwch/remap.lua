@@ -61,3 +61,6 @@ vim.keymap.set("n", "<leader>gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", { no
 vim.keymap.set("i", "<C-s>", function() require("luasnip").expand() end) 
 vim.keymap.set("i", "<C-j>", function() require("luasnip").jump(1) end) 
 vim.keymap.set("i", "<C-k>", function() require("luasnip").jump(-1) end) 
+
+-- ex
+vim.keymap.set('n', '<leader>mf', ':!mix format %<CR>', { desc = 'Format current file with mix' })
