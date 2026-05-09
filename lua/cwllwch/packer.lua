@@ -14,7 +14,7 @@ local packer_bootstrap = ensure_packer()
 return require('packer').startup(function(use)
 		use 'wbthomason/packer.nvim'
 		use 'ThePrimeagen/harpoon'
-		use 'nvim-tree/nvim-web-devicons' 
+		use 'nvim-tree/nvim-web-devicons'
 		use 'mason-org/mason.nvim'
 		use 'neovim/nvim-lspconfig'
 		use 'nvim-treesitter/completion-treesitter' -- Only if you are using TS
@@ -58,8 +58,8 @@ return require('packer').startup(function(use)
 			requires = { "nvim-lua/plenary.nvim", },
 			}
 
-		use('nvim-treesitter/nvim-treesitter', {run = 'TSUpdate'}) 
-		
+		use('nvim-treesitter/nvim-treesitter', {run = 'TSUpdate'})
+
 		use {
 			'nvim-lualine/lualine.nvim',
 			requires = { 'nvim-tree/nvim-web-devicons', opt = true }
@@ -75,7 +75,7 @@ return require('packer').startup(function(use)
 		use {
 			'NeogitOrg/neogit',
 			requires = {
-				'sindrets/diffview.nvim', 
+				'sindrets/diffview.nvim',
 			}
 		}
 
