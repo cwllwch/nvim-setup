@@ -17,6 +17,7 @@ return require('packer').startup(function(use)
 		use 'nvim-tree/nvim-web-devicons'
 		use 'mason-org/mason.nvim'
 		use 'neovim/nvim-lspconfig'
+		use('nvim-treesitter/nvim-treesitter', {run = 'TSUpdate'})
 		use 'nvim-treesitter/completion-treesitter' -- Only if you are using TS
 		use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
 		use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
@@ -30,25 +31,26 @@ return require('packer').startup(function(use)
 		use 'nvim-mini/mini.operators'
 		use 'airblade/vim-gitgutter'
 
-		use { 'folke/trouble.nvim', 
+		use { 'folke/trouble.nvim',
 			requires = 'nvim-tree/nvim-web-devicons',
 			config = function()
 				require("trouble").setup {}
 			end
 		}
+
 		use {'folke/flash.nvim',
 			config = function()
 				require("flash").setup {}
 			end
 		}
 
-		use { "catppuccin/nvim", 
+		use { "catppuccin/nvim",
 				as = "catppuccin",
 				config = function()
 					vim.cmd('colorscheme catppuccin-mocha')
 				end
 			}
-		
+
 		use { 'nvim-telescope/telescope.nvim',
 			 requires = { 'nvim-lua/plenary.nvim' }
 			}
@@ -58,7 +60,6 @@ return require('packer').startup(function(use)
 			requires = { "nvim-lua/plenary.nvim", },
 			}
 
-		use('nvim-treesitter/nvim-treesitter', {run = 'TSUpdate'})
 
 		use {
 			'nvim-lualine/lualine.nvim',
