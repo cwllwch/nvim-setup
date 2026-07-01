@@ -1,4 +1,5 @@
 local ensure_packer = function()
+
   local fn = vim.fn
   local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
   if fn.empty(fn.glob(install_path)) > 0 then
@@ -17,8 +18,6 @@ return require('packer').startup(function(use)
 		use 'nvim-tree/nvim-web-devicons'
 		use 'mason-org/mason.nvim'
 		use 'neovim/nvim-lspconfig'
-		use('nvim-treesitter/nvim-treesitter', {run = 'TSUpdate'})
-		use 'nvim-treesitter/completion-treesitter' -- Only if you are using TS
 		use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
 		use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
 		use {'L3MON4D3/LuaSnip', dependencies = {"rafamadriz/friendly-snippets"}}
@@ -50,6 +49,8 @@ return require('packer').startup(function(use)
 					vim.cmd('colorscheme catppuccin-mocha')
 				end
 			}
+
+    use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
 		use { 'nvim-telescope/telescope.nvim',
 			 requires = { 'nvim-lua/plenary.nvim' }
