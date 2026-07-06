@@ -29,6 +29,7 @@ return require('packer').startup(function(use)
 		use 'nvim-mini/mini.surround'
 		use 'nvim-mini/mini.operators'
 		use 'airblade/vim-gitgutter'
+		use 'stevearc/conform.nvim'
 
 		use { 'folke/trouble.nvim',
 			requires = 'nvim-tree/nvim-web-devicons',

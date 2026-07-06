@@ -15,3 +15,10 @@ vim.lsp.config('expert', {
 })
 
 vim.lsp.enable 'expert'
+
+vim.api.nvim_create_autocmd('BufWritePre', {
+  pattern = { '*.ex', '*.exs', '*.heex' },
+  callback = function()
+    vim.lsp.buf.format({ timeout_ms = 2000 })
+  end,
+})
